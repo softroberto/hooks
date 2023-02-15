@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+// Las funciones impuras son las que retornas cosas que no tienen nada que ver y manda valores distintos
+const impura = () => new Date().toLocaleDateString();
+console.log(impura());
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// TODOS LOS COMPONENTES FUNCIONALES SIEMPRE SE TRABAJAN CON REACT
+const MiComponente = ({ miprop }) => {
+  return <div>nombre: {miprop}</div>;
+};
+const App = () => {
+  return <MiComponente miprop={"eres un chingon"} />;
+};
 
 export default App;
