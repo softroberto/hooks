@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import PrimerUseState from './components/UseState';
 import reportWebVitals from './reportWebVitals';
-import Intro from './intro';
+import Intro from './components/Intro';
+import CustomHook from './components/CustomHook'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+  <CustomHook />
+   {/*  <PrimerUseState /> */}
    {/*  <Intro /> */}
   </React.StrictMode>
 );
