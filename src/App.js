@@ -1,13 +1,40 @@
-// Las funciones impuras son las que retornas cosas que no tienen nada que ver y manda valores distintos
-const impura = () => new Date().toLocaleDateString();
-console.log(impura());
+import { Component, useState } from "react";
+// reglas de los hooks:
+//  No se pueden usar en contadores ni en validaciones iF
+// tienen que declararse al inicio del componente
+// solo se llaman en dos partes, en componentes de react
+// custom hooks
 
-// TODOS LOS COMPONENTES FUNCIONALES SIEMPRE SE TRABAJAN CON REACT
-const MiComponente = ({ miprop }) => {
-  return <div>nombre: {miprop}</div>;
-};
+// useState con clases
+class AppClases extends Component {
+  state = {contador: 0}
+  incrementar = () => {
+    this.setState({contador: this.state.contador + 1})
+  }
+  render() {
+    return (
+      <div>
+        contador: {this.state.contador}
+        <button onClick={this.incrementar}>
+          Incrementar contador
+        </button>
+      </div>
+    );
+  }
+}
+
+// usState con componente funcional
 const App = () => {
-  return <MiComponente miprop={"eres un chingon"} />;
+  // prmer elemento valor , segundo elemento el set del valor
+  const [contador, setContador] = useState(0); //<-- UNICO ELEMENTO
+  return (
+    <div>
+      contador: {contador}
+      <button onClick={() => setContador(contador + 1)}>
+        Incrementar contador
+      </button>
+    </div>
+  );
 };
 
 export default App;
