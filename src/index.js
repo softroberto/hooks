@@ -5,12 +5,14 @@ import PrimerUseState from "./components/UseState";
 import reportWebVitals from "./reportWebVitals";
 import Intro from "./components/Intro";
 import CustomHook from "./components/CustomHook";
-import UseEffect from "./components/UseEfect";
+import UseEffect from "./components/UseEffect";
+import UseEffectConClases from "./components/UseEffectConClases";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <UseEffect />
+  <UseEffectConClases />
+    {/* <UseEffect /> */}
     {/* <CustomHook /> */}
     {/*  <PrimerUseState /> */}
     {/*  <Intro /> */}

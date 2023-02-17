@@ -18,7 +18,7 @@ const Interval = ({ contador }) => {
   return (<p>Intervalo</p>)
 };
 
-const useEfect = () => {
+const UseEfect = () => {
   const [contador, incrementar] = useContador(0);
 
   useEffect(() => {
@@ -33,4 +33,4 @@ const useEfect = () => {
     </div>
   );
 };
-export default useEfect;
+export default UseEfect;
