@@ -1,18 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import PrimerUseState from "./components/UseState";
+//import PrimerUseState from "./components/UseState";
 import reportWebVitals from "./reportWebVitals";
-import Intro from "./components/Intro";
-import CustomHook from "./components/CustomHook";
-import UseEffect from "./components/UseEffect";
-import UseEffectConClases from "./components/UseEffectConClases";
-import UseReducer from "./components/UseReducer";
+//import Intro from "./components/Intro";
+//import CustomHook from "./components/CustomHook";
+//import UseEffect from "./components/UseEffect";
+//import UseEffectConClases from "./components/UseEffectConClases";
+//import UseReducer from "./components/UseReducer";
+import UseRef from "./components/UseRef";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-  <UseReducer/>
+  <UseRef />
+  {/* <UseReducer/> */}
   {/* <UseEffectConClases /> */}
     {/* <UseEffect /> */}
     {/* <CustomHook /> */}
