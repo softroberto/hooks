@@ -7,11 +7,13 @@ import Intro from "./components/Intro";
 import CustomHook from "./components/CustomHook";
 import UseEffect from "./components/UseEffect";
 import UseEffectConClases from "./components/UseEffectConClases";
+import UseReducer from "./components/UseReducer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-  <UseEffectConClases />
+  <UseReducer/>
+  {/* <UseEffectConClases /> */}
     {/* <UseEffect /> */}
     {/* <CustomHook /> */}
     {/*  <PrimerUseState /> */}
