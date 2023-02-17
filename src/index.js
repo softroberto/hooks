@@ -1,17 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import PrimerUseState from './components/UseState';
-import reportWebVitals from './reportWebVitals';
-import Intro from './components/Intro';
-import CustomHook from './components/CustomHook'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import PrimerUseState from "./components/UseState";
+import reportWebVitals from "./reportWebVitals";
+import Intro from "./components/Intro";
+import CustomHook from "./components/CustomHook";
+import UseEffect from "./components/UseEffect";
+import UseEffectConClases from "./components/UseEffectConClases";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-  <CustomHook />
-   {/*  <PrimerUseState /> */}
-   {/*  <Intro /> */}
+  <UseEffectConClases />
+    {/* <UseEffect /> */}
+    {/* <CustomHook /> */}
+    {/*  <PrimerUseState /> */}
+    {/*  <Intro /> */}
   </React.StrictMode>
 );
 
