@@ -2,7 +2,7 @@ import { useState } from "react";
 
 // CUSTOM HOOKS
 const useContador = (inicial) => {
-  const [contador, setContador] = useState(inicial); //<-- UNICO ELEMENTO
+  const [contador, setContador] = useState(inicial); //<-- ÚNICO ELEMENTO
   const incrementar = () => {
     setContador(contador + 1);
   };
