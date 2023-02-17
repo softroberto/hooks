@@ -3,15 +3,15 @@ import { useReducer, useState } from "react";
 //  definir estado (tipo objeto) {contador : 0}
 // estado === state
 // objeto === {contador: 0}
-// state = {contaddor: 0}
+// state = {contador: 0}
 
-// el reducer se declara igual que la funcion reduce de js
+// el reducer se declara igual que la función reduce de js
 // solo se cambia el acumulador,elemento
 // action = siempre tiene que ser string
-// opcionalemnte se usa paylod y eso puede ser cualquier valor
-// action = {type: 'string', paylod: any }
+// opcionalmente se usa payload y eso puede ser cualquier valor
+// action = {type: 'string', payload: any }
 
-// quedaria asi
+// quedaría asi
 // state = {contador: 0}
 // action = {type: string, payload: any}
 
